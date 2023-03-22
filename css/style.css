@@ -1,0 +1,104 @@
+
+
+/* regole generali */
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.centered {
+    padding: 20px 15%;
+}
+
+/* INTESTAZIONE */
+
+/* add border-bottom shadow */
+header {
+    /* height: 100px; */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: orangered;
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categ {
+    display: flex;
+    gap: 5px;
+}
+
+/* MAIN */
+
+main {
+    margin: 180px 0 80px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FOOTER */
+
+footer {
+    /* height: 150px; */
+    background-color: black;
+    color:#ffffff;
+
+}
+
+.legal-info {
+    display: flex;
+    gap: 5px;
+}
+
+
+/* DEBUG */
+
+nav {
+    background-color: blueviolet;
+}
+
+    .categ {
+        border: dotted 2px black;
+    }
+
+    .logo {
+        height: 40px;
+        width: 200px;
+        border: dotted 2px black;
+    }
+
+    .icons {
+        width: 100px;
+        border: dotted 2px black;
+    }
+
+.row {
+    background-color: aqua;
+    border: dotted 2px black;
+
+}
+
+.product-col {
+    height: 500px;
+    width: 350px;
+    border: solid 3px blueviolet;
+}
