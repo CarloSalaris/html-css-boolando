@@ -23,7 +23,7 @@ ul {
 }
 
 .centered {
-    padding: 18px 15%;
+    padding: 18px 10%;
 }
 
 /* INTESTAZIONE */
@@ -75,7 +75,7 @@ main {
 }
 
     .img-container {
-        width: 350px;
+        width: 400px;
         position: relative;
     }
 
@@ -131,6 +131,35 @@ main {
         .img-container .heart:hover {
             color: red;
         }
+
+        /* Label */
+
+        .label {
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            display: flex;
+            gap: 5px;
+        }
+
+        .label > * {
+            font-size: 13px;
+            font-weight: 700;
+            color: #ffffff;
+            padding: 5px 8px;
+        }
+
+        .label .discount {
+            background-color: red;
+        }
+
+        .label .sustainable {
+            background-color: green;
+        }
+
+        /* Parte di testo sotto le immagini */
+
+        
 
 /* FOOTER */
 
