@@ -33,6 +33,7 @@ header {
     min-height: 70px;
     width: 100%;
     position: fixed;
+    z-index: 900;
     top: 0;
     left: 0;
     background-color: #ff6900;
@@ -64,13 +65,72 @@ header {
 /* MAIN */
 
 main {
-    margin: 100px 0 60px;
+    margin: 120px 0 50px;
 }
 
 .row {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
+
+    .img-container {
+        width: 350px;
+        position: relative;
+    }
+
+        .img-container img {
+            width: 100%;
+        }
+
+            /* :Hover cambio immagine */
+
+            /* Row 1 */
+            img#r1c1:hover{
+                content: url("../img/1b.webp");
+            }
+
+            img#r1c2:hover{
+                content: url("../img/2b.webp");
+            }
+
+            img#r1c3:hover{
+                content: url("../img/3b.webp");
+            }
+
+            /* Row 2 */
+
+            img#r2c1:hover{
+                content: url("../img/4b.webp");
+            }
+
+            img#r2c2:hover{
+                content: url("../img/5b.webp");
+            }
+
+            img#r2c3:hover{
+                content: url("../img/6b.webp");
+            }
+
+        /* Heart */
+
+        .img-container .heart {
+            font-size: 30px;
+            width: 45px;
+            height: 45px;
+            text-align: center;
+            padding: 5px;
+            background-color: #ffffff;
+            position: absolute;
+            top: 10px;
+            right: 0;
+        }
+
+        /* BONUS */
+
+        .img-container .heart:hover {
+            color: red;
+        }
 
 /* FOOTER */
 
@@ -88,8 +148,8 @@ footer {
 
 
 /* DEBUG */
-
-/* nav {
+/* 
+nav {
         border: solid 3px blueviolet;
 }
 
@@ -104,7 +164,7 @@ footer {
     .icons {
         width: 100px;
         border: dotted 2px black;
-    } */
+    }
 
 .row {
     background-color: aqua;
@@ -112,8 +172,8 @@ footer {
 
 }
 
-.product-col {
+.product {
     height: 500px;
     width: 350px;
     border: solid 3px blueviolet;
-}
+} */
