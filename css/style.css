@@ -26,6 +26,14 @@ ul {
     padding: 18px 10%;
 }
 
+.red {
+    color: red;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
 /* INTESTAZIONE */
 
 /* add border-bottom shadow */
@@ -159,7 +167,9 @@ main {
 
         /* Parte di testo sotto le immagini */
 
-        
+        .product .text {
+            font-size: 15px;
+        }
 
 /* FOOTER */
 
