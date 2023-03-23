@@ -22,6 +22,11 @@ ul {
     list-style-type: none;
 }
 
+.flex-list {
+    display: flex;
+    gap: 10px;
+}
+
 h4 {
     font-size: 18px;
 }
@@ -63,8 +68,6 @@ header {
 
         .categ {
             font-weight: 700;
-            display: flex;
-            gap: 10px;
         }
 
         img.boolean-logo {
@@ -72,8 +75,6 @@ header {
         }
 
         .icons {
-            display: flex;
-            gap: 10px;
             font-size: 20px;
         }
 
@@ -89,88 +90,77 @@ main {
     margin-bottom: 30px;
 }
 
-    .img-container {
-        width: 400px;
-        position: relative;
+    .product {
+        width: 32%;
     }
 
-        .img-container img {
+        .img-container {
             width: 100%;
+            position: relative;
         }
 
-            /* :Hover cambio immagine */
-
-            /* Row 1 */
-            img#r1c1:hover{
-                content: url("../img/1b.webp");
+            .img-container img {
+                max-width: 100%;
             }
 
-            img#r1c2:hover{
-                content: url("../img/2b.webp");
+                /* :Hover cambio immagine */
+
+                .hidden-img {
+                    display: none;
+                }
+
+                .img-container:hover .main-img{
+                    display: none;
+                }
+
+                .img-container:hover .hidden-img {
+                    display: inline-block;
+                }
+
+            /* Heart */
+
+            .img-container .heart {
+                font-size: 30px;
+                width: 45px;
+                height: 45px;
+                text-align: center;
+                padding: 5px;
+                background-color: #ffffff;
+                position: absolute;
+                top: 10px;
+                right: 0;
             }
 
-            img#r1c3:hover{
-                content: url("../img/3b.webp");
+            /* BONUS */
+
+            .img-container .heart:hover {
+                color: red;
             }
 
-            /* Row 2 */
+            /* Label */
 
-            img#r2c1:hover{
-                content: url("../img/4b.webp");
+            .label {
+                position: absolute;
+                bottom: 40px;
+                left: 0;
+                display: flex;
+                gap: 5px;
             }
 
-            img#r2c2:hover{
-                content: url("../img/5b.webp");
+            .label > * {
+                font-size: 13px;
+                font-weight: 700;
+                color: #ffffff;
+                padding: 5px 8px;
             }
 
-            img#r2c3:hover{
-                content: url("../img/6b.webp");
+            .label .discount {
+                background-color: red;
             }
 
-        /* Heart */
-
-        .img-container .heart {
-            font-size: 30px;
-            width: 45px;
-            height: 45px;
-            text-align: center;
-            padding: 5px;
-            background-color: #ffffff;
-            position: absolute;
-            top: 10px;
-            right: 0;
-        }
-
-        /* BONUS */
-
-        .img-container .heart:hover {
-            color: red;
-        }
-
-        /* Label */
-
-        .label {
-            position: absolute;
-            bottom: 40px;
-            left: 0;
-            display: flex;
-            gap: 5px;
-        }
-
-        .label > * {
-            font-size: 13px;
-            font-weight: 700;
-            color: #ffffff;
-            padding: 5px 8px;
-        }
-
-        .label .discount {
-            background-color: red;
-        }
-
-        .label .sustainable {
-            background-color: green;
-        }
+            .label .sustainable {
+                background-color: green;
+            }
 
 
 /* FOOTER */
